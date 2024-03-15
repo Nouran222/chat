@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+}
+
+.title{
+    margin:20px 0;
+}
+
+.main{
+    border: 10px solid bisque;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.name{
+    display:flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: burlywood;
+}
+
+.name-input{
+    font-size: 20px;
+    font-weight: 700;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 10px;
+    outline: none;
+    color:burlywood;
+    background-color:bisque;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.message-container{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width:400px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.message-right,.message-left{
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.message-left{
+    border-radius: 20px 20px 20px 0px;
+    background-color: antiquewhite;
+    align-self:flex-start;
+    box-shadow: -2px 2px 4px burlywood;
+}
+
+.message-right{
+    border-radius: 20px 20px 0px 20px;
+    background-color: burlywood;
+    align-self: flex-end;
+    box-shadow: 2px 2px 4px brown;
+}
+
+.message-left>p>span,.message-right>p>span{
+    display:block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.feedback{
+    font-style: italic;
+    font-size: 12px;
+    padding: 0px 16px 16px 16px;
+    text-align: center;
+}
+
+.message-form{
+    display: flex;
+    justify-content: space-between;
+    width:400px;
+}
+
+.message-input{
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    height: 40px;
+    background-color: antiquewhite;
+    padding: 0px 12px;
+    font-size: 15px;
+}
+
+.send-button{
+    height: 40px;
+    border:none;
+    outline:none;
+    font-weight: bold;
+    padding: 0px 12px;
+    background-color: antiquewhite;
+    /* background-color: burlywood; */
+    cursor: pointer;
+    box-shadow: -2px 2px burlywood;
+}
+
+.clients-total{
+    padding: 20px;
+}
