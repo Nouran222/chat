@@ -11,6 +11,7 @@ const inputMessage = document.getElementById("message-input");
 //event handling 
 socket.on("clients-total",(data)=>{
     numOfClients.innerText = `Clients: ${data}`;
+    //comment
 });
 
 chatForm.addEventListener("submit",(e)=>{
