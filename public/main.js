@@ -6,6 +6,8 @@ const messageContainer = document.getElementById("message-container");
 const nameInput = document.getElementById("name-input");
 const chatForm = document.getElementById("message-form");
 const inputMessage = document.getElementById("message-input");
+
+//
 //event handling 
 socket.on("clients-total",(data)=>{
     numOfClients.innerText = `Clients: ${data}`;
